@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 /* Since we are not defining rules for the "p" tag, it will follow the rules in body.*/
+
+}
 body {
   font-family: "Press Start 2P", cursive;
   font-size: 15px;
@@ -11,4 +13,13 @@ body {
 h1 {
   font-style: italic;
   color: #46b4e7;
+}
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+    row-count: 3;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
 }
