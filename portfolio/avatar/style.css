@@ -1,7 +1,16 @@
-html, body {
-  margin: 0;
-  padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* Since we are not defining rules for the "p" tag, it will follow the rules in body.*/
+
+
+body {
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  background-color: #ffc0cb;
+  color: black;
+  padding-top: 5rem;
 }
-canvas {
-  display: block;
+h1 {
+  font-style: italic;
+  color: #46b4e7;
 }

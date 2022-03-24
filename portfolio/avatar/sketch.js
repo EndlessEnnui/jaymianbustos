@@ -9,11 +9,11 @@ var y;
 var s;
 var changeDirection;
 
- 
+
 
 function setup() {
   createCanvas(500, 500);
-  filter(BLUR, 3); 
+  filter(BLUR, 3);
   mic = new p5.AudioIn();
   mic.start();
   frameRate(fr);
@@ -36,34 +36,34 @@ console.log(deltaTime)
   clr3 = (deltaTime);
 
   wingAngle = map(mic.getLevel(), 0, 0.1,0,0.9);
-  
+
   background(bg);
-  
-  
+
+
   push();
   backDecal();
   pop();
-  
+
 object1.display();
 object1.move();
-  
+
 object2.display();
 object2.move();
 
 object3.display();
-object3.move();  
-  
-  
+object3.move();
+
+
   if (mouseX > width*0.4 && mouseX < width*0.6 && mouseY > height*0.3 && mouseY < height*0.55){
   console.log("mouse!");
-    
+
     scale(0.25)
     translate(1000,800)
     rotate(frameCount*10)
-    
-    
- 
-    
+
+
+
+
 } else {
   rotate(0);
    translate (0, y -25)
@@ -76,12 +76,12 @@ object3.move();
 	else if(changeDirection == true){
 		y=y-1}
 }
-  
-  
 
-  
-  
-  
+
+
+
+
+
   wings(wingAngle);
   arms();
   legs();
@@ -104,36 +104,36 @@ object3.move();
 
   translate(0, 40)
   bezier(155, 20, 10, 10, 80, 120, -55, 80);
-  
+
     translate(0, 40)
   bezier(155, 20, 10, 10, 80, 120, -55, 80);
-      
+
     translate(0, 40)
   bezier(155, 20, 10, 10, 80, 120, -55, 80);
-  
-  
+
+
     translate(0, 40)
 
-  pop();  
+  pop();
   }
 
-  
+
 
 function wings () {
     //Wings
 push();
- 
+
   let a = color (236 - mouseX,236 - mouseY,182)
-  fill (a);            
+  fill (a);
 push();
   rotate(-wingAngle);
   ellipseMode(CENTER);
       ellipse(169, 145, 65, 75);
       triangle(139, 129, 200, 130, 150, 99);
 pop();
-  
+
 push();
-  rotate(-wingAngle);       
+  rotate(-wingAngle);
       ellipse(385, 160, 55, 55);
 
       triangle(420, 130, 420, 170, 340, 220);
@@ -180,7 +180,7 @@ push();
     //corner right
       triangle(407, 81, 365, 90, 385, 63);
 pop();
-  
+
 push();
   let c = color (137 + mouseX, 240 + mouseY, 166);
   fill(c)
@@ -211,7 +211,7 @@ function face(){
   push();
   let d = color (0);
     fill(d);
-  
+
   //Left Eye
       rect (160, 180, 70, 7);
   //Right Eye
@@ -239,21 +239,21 @@ function bow(){
 
 function glasses(){
 push();
-  
+
     //translate (-110, -100);
     fill(0);
   rotate();
   //Center Glasses
       rect (140, 150, 85, 15);
-  
+
   //Top Glasses
       rect (290, 150, 85, 15);
       rect (215, 170, 85, 15);
-  
+
   //Bottom Glasses
       rect (140, 200, 85, 15);
       rect (290, 200, 85, 15);
-  
+
   //Vertical Frames
   rectMode(CENTER)
     translate(145, 183)
