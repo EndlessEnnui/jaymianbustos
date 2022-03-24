@@ -42,7 +42,7 @@ function setup() {
   frameRate(5);
 
   button = createButton('START');
-  button.parent('button');
+  button.parent('button2');
   button.mousePressed(roll);
 
 

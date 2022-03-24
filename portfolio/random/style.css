@@ -19,7 +19,7 @@ body {
   border-width: 25;
   border-color: #e60000;
 }
-button {
+#button2 {
   font-family: 'Press Start 2P', cursive;
   font-weight: bold;
   font-size: 50;
@@ -32,8 +32,7 @@ button {
   border-style: solid;
   border-color: #e60000;
     border-width: 15;
-  width: 400px;
-  height: 100px;
+
   outline: none;
 
 }
