@@ -12,3 +12,7 @@ h1 {
   font-style: italic;
   color: #46b4e7;
 }
+.carousel-inner > .item > img {
+  width:320px;
+  height:30px;
+}
