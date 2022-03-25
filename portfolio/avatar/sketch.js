@@ -12,7 +12,9 @@ var changeDirection;
 
 
 function setup() {
-  createCanvas(500, 500);
+  canvas = createCanvas(500, 500);
+  canvas.parent('myCanvas');
+
   filter(BLUR, 3);
   mic = new p5.AudioIn();
   mic.start();
