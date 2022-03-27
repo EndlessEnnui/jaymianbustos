@@ -1,16 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+</style>
 /* Since we are not defining rules for the "p" tag, it will follow the rules in body.*/
 
 
 body {
-  font-family: "Press Start 2P", cursive;
+font-family: 'VT323', monospace;
   font-size: 15px;
   background-color: #ffc0cb;
   color: black;
   padding-top: 5rem;
 }
 h1 {
+    font-family: "Press Start 2P", cursive;
   font-style: italic;
   color: #46b4e7;
 }
