@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 <style>
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-</style>
+
 /* Since we are not defining rules for the "p" tag, it will follow the rules in body.*/
 
 #myCanvas canvas {
@@ -24,6 +23,8 @@ h1 {
     font-family: "Press Start 2P", cursive;
   font-style: italic;
   color: #46b4e7;
+  text-align: center;
+  font-size: 50px;
 }
 .starter-template {
   padding: 3rem 1.5rem;
